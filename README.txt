@@ -1,1 +1,1 @@
-Hangman game with incorporated testing using Nunit.
+Hangman game. Made with the purpose of testing NUnit.
