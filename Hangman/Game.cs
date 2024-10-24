@@ -110,7 +110,7 @@ public class Game
         Console.Clear();
 
         Console.ForegroundColor = ConsoleColor.White;
-        Console.WriteLine("\n🔥Welcome to Hangman!🔥");
+        Console.WriteLine("\n🔥 Welcome to Hangman! 🔥");
     }
 
     // Checks if the input is a letter.
