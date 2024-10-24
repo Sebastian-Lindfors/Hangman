@@ -16,7 +16,7 @@ public class Tests
     [Test]
     public void IsValidCharacter_IsLetter()
     {
-        var result = _game.IsValidCharacter('a');
+        var result = Game.IsValidCharacter('a');
 
         Assert.That(result, Is.True, "The input must be a letter!");
     }
@@ -27,7 +27,7 @@ public class Tests
         char input = 'd';
         List<char> list = ['a', 'b', 'c'];
 
-        var result = _game.IsGuessedLetter(input, list);
+        var result = Game.IsGuessedLetter(input, list);
         Assert.That(result, Is.False, "The input should be false!");
 
     }
@@ -38,7 +38,7 @@ public class Tests
     public void IsGuessedLetter_LetterIsGuessed(char a)
     {
         List<char> list = ['a', 'b', 'c'];
-        var result = _game.IsGuessedLetter(a, list);
+        var result = Game.IsGuessedLetter(a, list);
         Assert.IsTrue(result, "input should be true!");
     }
 
@@ -47,7 +47,7 @@ public class Tests
     public void MaskedWord_CheckStringLength(string a)
     {
         List<char> guessedLetters = [];
-        var result = _game.GetMaskedWord(a, guessedLetters);
+        var result = Game.GetMaskedWord(a, guessedLetters);
 
         Assert.That(result, Has.Length.EqualTo(a.Length * 2), $"result has length {result.Length}, it should be {a.Length * 2} units long.");
     }
