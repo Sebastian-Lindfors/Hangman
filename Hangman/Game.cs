@@ -114,19 +114,19 @@ public class Game
     }
 
     // Checks if the input is a letter.
-    public bool IsValidCharacter(char input)
+    public static bool IsValidCharacter(char input)
     {
         return char.IsLetter(input);
     }
 
     // Checks if the player has won the game.
-    bool HasWon(string word, List<char> guessedLetters)
+    static bool HasWon(string word, List<char> guessedLetters)
     {
         return word.All(guessedLetters.Contains);
     }
 
     // Checks if the players guess is correct.
-    bool CheckIfCorrect(char input, string word)
+    static bool CheckIfCorrect(char input, string word)
     {
         foreach (char a in word.ToCharArray())
         {
@@ -140,7 +140,7 @@ public class Game
     }
 
     // Prints a masked version of the word.
-    public string GetMaskedWord(string word, List<char> guessedLetters)
+    public static string GetMaskedWord(string word, List<char> guessedLetters)
     {
         char[] maskedWord = new char[word.Length];
         string returnableWord = string.Empty;
@@ -170,7 +170,7 @@ public class Game
     }
 
     // Checks if a letter has already been guessed.
-    public bool IsGuessedLetter(char input, List<char> guessedLetters)
+    public static bool IsGuessedLetter(char input, List<char> guessedLetters)
     {
         foreach (char a in guessedLetters)
         {
@@ -184,7 +184,7 @@ public class Game
     }
 
     // Outputs a yellow line of text.
-    void WarningMessage(string text)
+    static void WarningMessage(string text)
     {
         Console.ForegroundColor = ConsoleColor.DarkYellow;
         Console.WriteLine(text);
@@ -192,7 +192,7 @@ public class Game
     }
 
     // Outputs a green line of text.
-    void SuccessMessage(string text)
+    static void SuccessMessage(string text)
     {
         Console.ForegroundColor = ConsoleColor.Green;
 
@@ -204,7 +204,7 @@ public class Game
     }
 
     // Outputs a red line of text.
-    void FailMessage(string text)
+    static void FailMessage(string text)
     {
         Console.ForegroundColor = ConsoleColor.Red;
         Console.WriteLine(text);
@@ -212,7 +212,7 @@ public class Game
     }
 
     // Fetches a random word from an API.
-    string FetchRandomWord()
+    public static string FetchRandomWord()
     {
         string url = "https://random-word-api.herokuapp.com/word";
         string word;

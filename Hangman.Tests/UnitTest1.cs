@@ -43,11 +43,12 @@ public class Tests
     }
 
     [TestCase("photosynthesis")]
+    [TestCase("banana")]
     public void MaskedWord_CheckStringLength(string a)
     {
         List<char> guessedLetters = [];
         var result = _game.GetMaskedWord(a, guessedLetters);
 
-        Assert.That(result.Length, Is.EqualTo(a.Length));
+        Assert.That(result, Has.Length.EqualTo(a.Length * 2), $"result has length {result.Length}, it should be {a.Length * 2} units long.");
     }
 }
