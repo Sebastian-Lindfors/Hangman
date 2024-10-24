@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hangman", "Hangman\Hangman.csproj", "{8034B328-D783-4811-8071-3337EFF80649}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hangman.Tests", "Hangman.Tests\Hangman.Tests.csproj", "{A3B1C18C-9A43-47CA-A692-0159E8488791}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8034B328-D783-4811-8071-3337EFF80649}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8034B328-D783-4811-8071-3337EFF80649}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8034B328-D783-4811-8071-3337EFF80649}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8034B328-D783-4811-8071-3337EFF80649}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3B1C18C-9A43-47CA-A692-0159E8488791}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3B1C18C-9A43-47CA-A692-0159E8488791}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3B1C18C-9A43-47CA-A692-0159E8488791}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3B1C18C-9A43-47CA-A692-0159E8488791}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
